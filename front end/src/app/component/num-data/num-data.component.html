@@ -1,0 +1,212 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+
+            <!-- loop over the collection of products -->
+            <div class="row-area" *ngFor="let tempnumData of numData">
+
+                <table>
+                    <tr>
+                      <td>
+                        <span class="price"> Id </span></td><td>{{ tempnumData.id}}
+                      </td>
+                      <td>
+                        <span class="price"> number </span></td><td>{{ tempnumData.number}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="price"> valid </span></td><td>{{ tempnumData.valid}}
+                      </td>
+                      <td>
+                        <span class="price"> country code </span></td><td>{{ tempnumData.country_code}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="price"> country name </span></td><td>{{ tempnumData.country_name}}
+                      </td>
+                      <td>
+                        <span class="price"> location </span></td><td>{{ tempnumData.location}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="price"> carrier </span></td><td>{{ tempnumData.carrier}}
+                      </td>
+                      <td>
+                        <span class="price"> line type </span></td><td>{{ tempnumData.line_type}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="price"> local Format </span></td><td>{{ tempnumData.local_format}}
+                      </td>
+                      <td>
+                        <span class="price"> international format </span></td><td>{{ tempnumData.international_format}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="price"> country prefix </span></td><td>{{ tempnumData.country_prefix}}
+                      </td>
+                      <td><span class="price"> line type </span></td><td>{{ tempnumData.line_type}}</td>
+                    </tr>
+                    </table>
+                    
+                <!-- <table>
+                    <tr>
+                        <td>
+                            <span class="price"> Id : </span>{{ tempnumData.id}}
+                        </td>
+                        <td>
+                            <span class="price"> number : </span>{{ tempnumData.number}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="price"> valid : </span>{{ tempnumData.valid}}
+                        </td>
+                        <td>
+                            <span class="price"> country code : </span>{{ tempnumData.country_code}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="price"> country name : </span>{{ tempnumData.country_name}}
+                        </td>
+                        <td>
+                            <span class="price"> location : </span>{{ tempnumData.location}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="price"> carrier : </span>{{ tempnumData.carrier}}
+                        </td>
+                        <td>
+                            <span class="price"> line type : </span>{{ tempnumData.line_type}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="price"> local Format : </span>{{ tempnumData.local_format}}
+                        </td>
+                        <td>
+                            <span class="price"> international format : </span>{{ tempnumData.international_format}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="price"> country prefix : </span>{{ tempnumData.country_prefix}}
+                        </td>
+                        <td><span class="price"> line type : </span>{{ tempnumData.line_type}}</td>
+                    </tr>
+                </table>
+ -->
+
+                <!-- <table>
+                    <tr>
+                      <td>
+                        <div class="price"> Id : </div>
+                        {{ tempnumData.id}}
+                      </td>
+                      <td></td>
+                      <td>
+                        <div class="price"> number : </div>
+                        {{ tempnumData.number}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="price"> valid : </div>
+                        {{ tempnumData.valid}}
+                      </td>
+                      <td></td>
+                      <td>
+                        <div class="price"> country code : </div>
+                        {{ tempnumData.country_code}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="price"> country name : </div>
+                        {{ tempnumData.country_name}}
+                      </td>
+                      <td></td>
+                      <td>
+                        <div class="price"> location : </div>
+                        {{ tempnumData.location}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="price"> carrier : </div>
+                        {{ tempnumData.carrier}}
+                      </td>
+                      <td></td>
+                      <td>
+                        <div class="price"> line type : </div>
+                        {{ tempnumData.line_type}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="price"> local Format : </div>
+                        {{ tempnumData.local_format}}
+                      </td>
+                      <td></td>
+                      <td>
+                        <div class="price"> international format : </div>
+                        {{ tempnumData.international_format}}
+                      </td>
+                    </tr>
+      
+                    <tr>
+                      <td>
+                        <div class="price"> country prefix : </div>
+                      </td>
+                      <td>{{ tempnumData.country_prefix}} </td>
+                    </tr>
+                  </table> -->
+
+                <!-- <table>
+                    <tr>
+                        <td><div class="price"> valid : </div></td><td>{{ tempnumData.valid}} </td>
+                    </tr>
+                    <tr>
+                        <td><div class="price"> number : </div></td><td>{{ tempnumData.number}} </td>
+                    </tr>
+                    <tr>
+                        <td><div class="price"> local Format : </div></td><td>{{ tempnumData.local_format}} </td>
+                    </tr>
+                    <tr>
+                        <td><div class="price"> international format : </div></td><td>{{ tempnumData.international_format}} </td>
+                    </tr>
+                    <tr>
+                        <td><div class="price"> country prefix : </div></td><td>{{ tempnumData.country_prefix}} </td>
+                    </tr>
+                    <tr>
+                        <td><div class="price"> country code : </div></td><td>{{ tempnumData.country_code}} </td>
+                    </tr>
+                    <tr>
+                        <td><div class="price"> country name : </div></td><td>{{ tempnumData.country_name}} </td>
+                    </tr>
+                    <tr>
+                        <td><div class="price"> location : </div></td><td>{{ tempnumData.location}} </td>
+                    </tr>
+                    <tr>
+                        <td><div class="price"> carrier : </div></td><td>{{ tempnumData.carrier}} </td>
+                    </tr>
+                    <tr>
+                        <td></td><div class="price"> line type : {{ tempnumData.line_type}} </div>
+                    </tr>
+                </table> -->
+
+            </div>
+            <div *ngIf="numData?.length == 0" class="alert alert-warning col-md-12" role="alert">
+                No Data.
+            </div>
+
+        </div>
+    </div>
+</div>

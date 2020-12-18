@@ -1,0 +1,77 @@
+<div class="main-content">
+  <div class="section-content section-content-p30">
+    <div class="container-fluid">
+      <div class="submit-form">
+        <div *ngIf="!submitted">
+
+          <div class="form-group">
+            <td><label for="title"> Number </label></td>
+            <td><input #myInput class="au-input au-input-xl" placeholder="enter your for products ..." /></td>
+          </div>
+
+          <button (click)="listProducts(myInput.value)" class="btn btn-success">Submit</button>
+        </div>
+
+        <div *ngIf="submitted">
+          <h4>
+            number was submitted successfully!
+            <br><br>
+            <button class="btn btn-success" (click)="newNumber()"> Verify Another </button>
+          </h4>
+          <br>
+          <div class="row-area">
+            <table>
+              <tr>
+                <td>
+                  <span class="price"> Id : </span>{{ numData.id}}
+                </td>
+                <td>
+                  <span class="price"> number : </span>{{ numData.number}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price"> valid : </span>{{ numData.valid}}
+                </td>
+                <td>
+                  <span class="price"> country code : </span>{{ numData.country_code}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price"> country name : </span>{{ numData.country_name}}
+                </td>
+                <td>
+                  <span class="price"> location : </span>{{ numData.location}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price"> carrier : </span>{{ numData.carrier}}
+                </td>
+                <td>
+                  <span class="price"> line type : </span>{{ numData.line_type}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price"> local Format : </span>{{ numData.local_format}}
+                </td>
+                <td>
+                  <span class="price"> international format : </span>{{ numData.international_format}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price"> country prefix : </span>{{ numData.country_prefix}}
+                </td>
+                <td><span class="price"> line type : </span>{{ numData.line_type}}</td>
+              </tr>
+            </table>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
